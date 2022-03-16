@@ -1,9 +1,11 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { Container } from "./components/styled/Container.styled";
 import Header from "./components/Header";
-import "./App.css";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import { Container } from "./components/styled/Container.styled";
 import GlobalStyles from "./components/styled/Global";
+import content from "./Content";
 
 const theme = {
     colors: {
@@ -11,6 +13,8 @@ const theme = {
         body: "#fff",
         footer: "#003333",
     },
+
+    mobile: "768px",
 };
 
 function App() {
@@ -20,8 +24,11 @@ function App() {
                 <GlobalStyles />
                 <Header />
                 <Container>
-                    <p>Clean React App</p>
+                    {content.map((item, index) => (
+                        <Card key={index} item={item} />
+                    ))}
                 </Container>
+                <Footer />
             </>
         </ThemeProvider>
     );
