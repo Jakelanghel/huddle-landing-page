@@ -1,11 +1,12 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
-import Card from "./components/Card";
-import Footer from "./components/Footer";
 import { Container } from "./components/styled/Container.styled";
-import GlobalStyles from "./components/styled/Global";
 import content from "./Content";
+import Card from "./components/Card";
+import Cta from "./components/Cta";
+import Footer from "./components/Footer";
+import GlobalStyles from "./components/styled/Global";
 
 const theme = {
     colors: {
@@ -28,6 +29,7 @@ function App() {
                         <Card key={index} item={item} />
                     ))}
                 </Container>
+                {/* <Cta /> */}
                 <Footer />
             </>
         </ThemeProvider>

@@ -22,7 +22,11 @@ const Header = () => {
                             connections with your users as you engage in genuine
                             discussion.
                         </p>
-                        <Button bg='#ff0099' color='#fff'>
+                        <Button
+                            className='get-started-btn'
+                            bg='#ff0099'
+                            color='#fff'
+                        >
                             Get Started For Free
                         </Button>
                     </div>
