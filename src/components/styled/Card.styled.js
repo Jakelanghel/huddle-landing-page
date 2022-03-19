@@ -2,31 +2,52 @@ import styled from "styled-components";
 
 export const StyledCard = styled.div`
     display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     margin: 40px 0;
-    padding: 2rem;
-    flex-direction: ${({ layout }) => layout || "row"};
-
-    img: {
-        width: 80%;
-    }
-    & > div {
-        flex: 1;
-    }
 
     h2 {
-        font-size: 1.25rem;
         text-align: center;
+    }
+
+    img {
+        padding: 2.5rem;
     }
 
     p {
-        font-size: 0.95rem;
+        font-size: 14px;
         text-align: center;
+        color: ${({ theme }) => theme.colors.grayishBlue};
+        padding: 1rem 2rem;
+        line-height: 1.45rem;
     }
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-        flex-direction: column;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        flex-direction: ${({ layout }) => layout};
+        align-items: center;
+        padding: 2rem;
+        padding-left: 4rem;
+        justify-content: space-between;
+
+        p,
+        h2 {
+            text-align: left;
+        }
+        p {
+            padding: 0;
+            padding-top: 1rem;
+            max-width: 375px;
+        }
+        img {
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .cd-rw {
+            width: 45%;
+        }
     }
 `;

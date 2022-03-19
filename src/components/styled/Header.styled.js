@@ -2,26 +2,57 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     background: ${({ theme }) => theme.colors.header};
-    padding: 1.5rem 0;
     background-image: url("./images/bg-hero-mobile.svg");
     background-size: cover;
-    background-position: 10px -80px;
+    background-position: -40px -40px;
 
     h1 {
-        font-size: 1.25rem;
-        padding: 0 2rem;
-        margin-bottom: 1.5rem;
-        letter-spacing: 1px;
+        max-width: 275px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        line-height: 2rem;
     }
 
     p {
-        font-size: 0.95rem;
-        line-height: 1.5rem;
-        margin-bottom: 1.5rem;
+        max-width: 345px;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
     }
 
-    .get-started-btn {
-        padding: 0.75rem 3rem;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        h1,
+        p {
+            text-align: left;
+        }
+
+        h1 {
+            margin: 0 0 1rem 0;
+            line-height: 2.5rem;
+            justify-self: flex-start;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 400px;
+            margin: 0 0 2rem 0;
+        }
+
+        .hero {
+            justify-content: space-between;
+            padding: 0 2rem;
+            padding-bottom: 3rem;
+        }
+
+        .hero-rw {
+            width: 45%;
+        }
+
+        .hero-rw-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 5rem;
+        }
     }
 `;
 
@@ -29,26 +60,25 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
-
-    /* @media (max-width: ${({ theme }) => theme.mobile}) {
-        flex-direction: column;
-    } */
+    margin-bottom: 4rem;
 `;
 
 export const Logo = styled.img`
     width: 100px;
-    /* @media (max-width: ${({ theme }) => theme.mobile}) {
-        margin-bottom: 40px;
-        width: ;
-    } */
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        width: 13%;
+    }
 `;
 
 export const Image = styled.img`
     width: 300px;
     margin-left: 40px;
+    margin: 3.75rem auto;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-        margin: 2rem auto;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 500px;
     }
 `;

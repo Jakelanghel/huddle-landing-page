@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 1000px;
-    max-width: 100%;
-    padding: 2rem;
+    max-width: 500px;
+    padding: 1.5rem;
+    padding-bottom: 0;
     margin: 0 auto;
+    margin-bottom: ${({ mg }) => mg};
+
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        max-width: none;
+        width: 90%;
+    }
 `;

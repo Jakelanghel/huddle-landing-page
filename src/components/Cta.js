@@ -6,7 +6,9 @@ const Cta = () => {
     return (
         <StyledContainerAbsolute>
             <h2>Ready To Build Your Community?</h2>
-            <Button>Get Started For Free</Button>
+            <Button bg='#ff0099' color='#fff'>
+                Get Started For Free
+            </Button>
         </StyledContainerAbsolute>
     );
 };

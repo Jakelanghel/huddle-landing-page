@@ -10,11 +10,11 @@ const Header = () => {
             <Container>
                 <Nav>
                     <Logo src='./images/logo.svg' alt='logo' />
-                    <Button>Try it Free</Button>
+                    <Button pd='.5rem 1.75rem'>Try it Free</Button>
                 </Nav>
 
-                <Flex>
-                    <div>
+                <Flex className='hero'>
+                    <div className='hero-rw hero-rw-1'>
                         <h1>Build The Community Your Fans Will Love</h1>
                         <p>
                             Huddle re-imagines the way we build communities. You
@@ -22,16 +22,13 @@ const Header = () => {
                             connections with your users as you engage in genuine
                             discussion.
                         </p>
-                        <Button
-                            className='get-started-btn'
-                            bg='#ff0099'
-                            color='#fff'
-                        >
+                        <Button bg='#ff0099' color='#fff'>
                             Get Started For Free
                         </Button>
                     </div>
-
-                    <Image src='./images/illustration-mockups.svg' />
+                    <div className='hero-rw'>
+                        <Image src='./images/illustration-mockups.svg' />
+                    </div>
                 </Flex>
             </Container>
         </StyledHeader>

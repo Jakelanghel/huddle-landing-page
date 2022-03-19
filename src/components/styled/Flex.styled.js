@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const Flex = styled.div`
     display: flex;
-    align-items: center;
+    align-items: ${({ alignIt }) => alignIt || "center"};
+    flex-direction: ${({ fd }) => fd || "column"};
+
+    text-align: center;
 
     & > descent-override,
     & > ul {
         flex: 1;
     }
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-        flex-direction: column;
-        text-align: center;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        flex-direction: row;
     }
 `;

@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import { Container } from "./components/styled/Container.styled";
 import content from "./Content";
 import Card from "./components/Card";
-import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 import GlobalStyles from "./components/styled/Global";
 
@@ -13,9 +12,13 @@ const theme = {
         header: "#ebfbff",
         body: "#fff",
         footer: "#003333",
+        pink: "hsl(208, 11%, 55%)",
+        darkCyan: "hsl(192, 100%, 9%)",
+        paleCyan: "hsl(193, 100%, 96%)",
+        grayishBlue: "hsl(208, 11%, 55%)",
     },
 
-    mobile: "768px",
+    desktop: "700px",
 };
 
 function App() {
@@ -24,12 +27,11 @@ function App() {
             <>
                 <GlobalStyles />
                 <Header />
-                <Container>
+                <Container mg='10rem'>
                     {content.map((item, index) => (
                         <Card key={index} item={item} />
                     ))}
                 </Container>
-                {/* <Cta /> */}
                 <Footer />
             </>
         </ThemeProvider>
