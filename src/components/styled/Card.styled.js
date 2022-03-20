@@ -10,6 +10,8 @@ export const StyledCard = styled.div`
 
     h2 {
         text-align: center;
+        margin-top: 1rem;
+        letter-spacing: 1px;
     }
 
     img {
@@ -21,6 +23,7 @@ export const StyledCard = styled.div`
         text-align: center;
         color: ${({ theme }) => theme.colors.grayishBlue};
         padding: 1rem 2rem;
+        padding-bottom: 2.5rem;
         line-height: 1.45rem;
     }
 
