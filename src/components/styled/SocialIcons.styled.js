@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSocialIcons = styled.div`
+export const StyledSocialIcons = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +23,10 @@ export const StyledSocialIcons = styled.div`
         height: 40px;
         width: 40px;
         text-decoration: none;
+    }
+
+    .hide {
+        display: none;
     }
 
     @media (min-width: ${({ theme }) => theme.desktop}) {

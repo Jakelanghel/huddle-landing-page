@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-    background-color: ${({ theme }) => theme.colors.footer};
+    background-color: ${({ theme }) => theme.colors.darkCyan};
     color: ${({ theme }) => theme.colors.body};
     padding: 10rem 3rem 3rem;
     position: relative;
@@ -87,7 +87,7 @@ export const StyledFooter = styled.footer`
             font-size: 1.15rem;
             text-align: left;
             margin-bottom: 1rem;
-            border-bottom: solid 1px #003333;
+            border-bottom: solid 1px ${({ theme }) => theme.colors.darkCyan};
             padding: 0;
         }
 

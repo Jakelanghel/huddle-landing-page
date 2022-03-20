@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
  @media (min-width: ${({ theme }) => theme.desktop}) {
    
   h1 {
-     font-size: 2rem;
+     font-size: 2.25rem;
    }
 
    h2 {

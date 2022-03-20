@@ -15,6 +15,7 @@ const theme = {
         darkCyan: "hsl(192, 100%, 9%)",
         paleCyan: "hsl(193, 100%, 96%)",
         grayishBlue: "hsl(208, 11%, 55%)",
+        pink: "hsl(322, 100%, 66%) ",
     },
 
     desktop: "700px",

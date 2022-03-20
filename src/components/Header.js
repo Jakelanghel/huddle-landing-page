@@ -3,6 +3,7 @@ import { StyledHeader, Nav, Logo, Image } from "./styled/Header.styled";
 import { Flex } from "./styled/Flex.styled";
 import { Container } from "./styled/Container.styled";
 import { Button } from "./styled/Button.styled";
+import { ThemeProvider } from "styled-components";
 
 const Header = () => {
     return (
@@ -22,7 +23,10 @@ const Header = () => {
                             connections with your users as you engage in genuine
                             discussion.
                         </p>
-                        <Button bg='#ff0099' color='#fff'>
+                        <Button
+                            bg={({ theme }) => theme.colors.pink}
+                            color='#fff'
+                        >
                             Get Started For Free
                         </Button>
                     </div>

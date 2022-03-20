@@ -20,6 +20,8 @@ export const StyledHeader = styled.header`
     }
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
+        background-image: url("./images/bg-hero-desktop.svg");
+
         h1,
         p {
             text-align: left;
@@ -29,7 +31,7 @@ export const StyledHeader = styled.header`
             margin: 3rem 0 1rem 0;
             line-height: 3rem;
             justify-self: flex-start;
-            max-width: none;
+            max-width: 400px;
         }
 
         p {
