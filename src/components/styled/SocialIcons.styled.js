@@ -25,8 +25,13 @@ export const StyledSocialIcons = styled.div`
         text-decoration: none;
     }
 
-    a:hover {
-        filter: brightness(0) saturate(100%) invert(12%) sepia(100%)
-            saturate(4816%) hue-rotate(319deg) brightness(116%) contrast(107%);
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+        justify-content: left;
+
+        a:hover {
+            filter: brightness(0) saturate(100%) invert(12%) sepia(100%)
+                saturate(4816%) hue-rotate(319deg) brightness(116%)
+                contrast(107%);
+        }
     }
 `;

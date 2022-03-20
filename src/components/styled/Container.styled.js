@@ -10,5 +10,6 @@ export const Container = styled.div`
     @media (min-width: ${({ theme }) => theme.desktop}) {
         max-width: none;
         width: 90%;
+        padding: 3rem 2rem;
     }
 `;

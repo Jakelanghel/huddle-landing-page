@@ -26,20 +26,21 @@ export const StyledHeader = styled.header`
         }
 
         h1 {
-            margin: 0 0 1rem 0;
-            line-height: 2.5rem;
+            margin: 3rem 0 1rem 0;
+            line-height: 3rem;
             justify-self: flex-start;
+            max-width: none;
         }
 
         p {
             font-size: 1rem;
-            max-width: 400px;
+            max-width: 460px;
             margin: 0 0 2rem 0;
         }
 
         .hero {
             justify-content: space-between;
-            padding: 0 2rem;
+            padding: 0;
             padding-bottom: 3rem;
         }
 
@@ -66,19 +67,18 @@ export const Nav = styled.nav`
 export const Logo = styled.img`
     width: 100px;
     @media (min-width: ${({ theme }) => theme.desktop}) {
-        width: 13%;
+        width: 18%;
     }
 `;
 
 export const Image = styled.img`
-    width: 300px;
+    width: 90%;
     margin-left: 40px;
     margin: 3.75rem auto;
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
         padding: 0;
         margin: 0;
-        width: 100%;
-        max-width: 500px;
+        width: 1000%;
     }
 `;

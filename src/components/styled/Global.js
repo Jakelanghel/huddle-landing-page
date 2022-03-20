@@ -41,6 +41,18 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
 }
+
+ @media (min-width: ${({ theme }) => theme.desktop}) {
+   
+  h1 {
+     font-size: 2rem;
+   }
+
+   h2 {
+     font-size: 1.75rem
+   }
+
+ }
 `;
 
 export default GlobalStyles;

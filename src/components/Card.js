@@ -8,7 +8,7 @@ const Card = ({ item: { id, title, body, image } }) => {
                 <img src={`./images/${image}`} alt='' />
             </div>
 
-            <div className='cd-rw'>
+            <div className='cd-rw cd-copy'>
                 <h2>{title}</h2>
                 <p>{body}</p>
             </div>

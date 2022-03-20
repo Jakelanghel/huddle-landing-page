@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContainerAbsolute = styled.div`
     width: 95%;
-    max-width: 600px;
+    max-width: 700px;
     background: #fff;
     position: absolute;
     top: -80px;
@@ -21,10 +21,14 @@ export const StyledContainerAbsolute = styled.div`
     }
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
-        padding: 3rem;
+        padding: 4rem 0;
 
         h2 {
+            font-size: 1.75rem;
             margin-bottom: 2rem;
+        }
+        .cta-btn {
+            font-size: 1.15rem;
         }
     }
 `;

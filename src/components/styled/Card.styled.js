@@ -41,16 +41,23 @@ export const StyledCard = styled.div`
         p {
             padding: 0;
             padding-top: 1rem;
-            max-width: 375px;
+            max-width: 575px;
+            font-size: 1rem;
+            line-height: 1.5rem;
         }
         img {
             padding: 0;
             width: 100%;
             margin: 0 auto;
+            padding: 3rem;
         }
 
         .cd-rw {
             width: 45%;
+        }
+
+        .cd-copy {
+            padding-left: 4rem;
         }
     }
 `;

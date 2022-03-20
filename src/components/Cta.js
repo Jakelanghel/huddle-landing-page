@@ -6,7 +6,7 @@ const Cta = () => {
     return (
         <StyledContainerAbsolute>
             <h2>Ready To Build Your Community?</h2>
-            <Button bg='#ff0099' color='#fff'>
+            <Button className='cta-btn' bg='#ff0099' color='#fff' ft='1.5rem'>
                 Get Started For Free
             </Button>
         </StyledContainerAbsolute>

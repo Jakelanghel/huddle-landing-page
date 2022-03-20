@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
     background-color: ${({ theme }) => theme.colors.footer};
     color: ${({ theme }) => theme.colors.body};
-    padding: 10rem 1rem 3rem;
+    padding: 10rem 3rem 3rem;
     position: relative;
     z-index: 0;
     display: flex;
@@ -53,22 +53,22 @@ export const StyledFooter = styled.footer`
         font-size: 0.75rem;
         letter-spacing: 1px;
         padding: 0;
-        margin-top: 1rem;
     }
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 13rem 3rem 1rem;
-
-        .ft-logo {
-            width: 50%;
-        }
+        padding: 20rem 3rem 2rem;
 
         .ft-contact-card {
-            width: 25%;
+            width: 33%;
             margin-right: 6rem;
+        }
+
+        .ft-logo {
+            width: 60%;
+            margin-bottom: 2.5rem;
         }
 
         .ft-nav {
@@ -77,6 +77,10 @@ export const StyledFooter = styled.footer`
 
         .ft-nav-rw {
             margin-right: 6rem;
+        }
+
+        ul {
+            margin-top: 2rem;
         }
 
         li {
@@ -97,6 +101,11 @@ export const StyledFooter = styled.footer`
             flex-direction: column;
             justify-content: space-between;
             padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .cw {
+            margin-top: 12rem;
         }
     }
 `;
