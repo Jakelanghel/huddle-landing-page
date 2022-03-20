@@ -28,11 +28,13 @@ function App() {
             <>
                 <GlobalStyles />
                 <Header />
-                <Container mg='10rem'>
-                    {content.map((item, index) => (
-                        <Card key={index} item={item} />
-                    ))}
-                </Container>
+                <main>
+                    <Container mg='10rem'>
+                        {content.map((item, index) => (
+                            <Card key={index} item={item} />
+                        ))}
+                    </Container>
+                </main>
                 <Footer />
             </>
         </ThemeProvider>

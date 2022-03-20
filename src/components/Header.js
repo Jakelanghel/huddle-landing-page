@@ -27,7 +27,10 @@ const Header = () => {
                         </Button>
                     </div>
                     <div className='hero-rw'>
-                        <Image src='./images/illustration-mockups.svg' />
+                        <Image
+                            src='./images/illustration-mockups.svg'
+                            alt='mock ups'
+                        />
                     </div>
                 </Flex>
             </Container>

@@ -6,19 +6,18 @@ const SocialIcons = () => {
     return (
         <StyledSocialIcons>
             <li>
-                <a href='https://twitter.com'>
-                    <span className='hide'>twitter.com</span>
+                <a href='https://twitter.com' aria-label='twitter.com'>
                     <FaTwitter />
                 </a>
             </li>
             <li>
-                <a href='https://facebook.com'>
+                <a href='https://facebook.com' aria-label='facebook.com'>
                     <span className='hide'>facebook.com</span>
                     <FaFacebook />
                 </a>
             </li>
             <li>
-                <a href='https://linkedin.com'>
+                <a href='https://linkedin.com' aria-label='linkdin.com'>
                     <span className='hide'>linkdin.com</span>
                     <FaLinkedin />
                 </a>
