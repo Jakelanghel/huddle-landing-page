@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
     background-color: ${({ theme }) => theme.colors.footer};
     color: ${({ theme }) => theme.colors.body};
-    padding: 10rem 1rem 1rem;
+    padding: 10rem 1rem 3rem;
     position: relative;
     z-index: 0;
     display: flex;
@@ -20,6 +20,7 @@ export const StyledFooter = styled.footer`
         font-size: 1.25rem;
         text-align: left;
         padding: 1rem;
+        padding-left: 0;
     }
 
     p {
@@ -52,7 +53,7 @@ export const StyledFooter = styled.footer`
         font-size: 0.75rem;
         letter-spacing: 1px;
         padding: 0;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 
     @media (min-width: ${({ theme }) => theme.desktop}) {
@@ -81,6 +82,14 @@ export const StyledFooter = styled.footer`
         li {
             font-size: 1.15rem;
             text-align: left;
+            margin-bottom: 1rem;
+            border-bottom: solid 1px #003333;
+            padding: 0;
+        }
+
+        li:hover {
+            cursor: pointer;
+            border-bottom: solid 1px #fff;
         }
 
         .ft-soc {

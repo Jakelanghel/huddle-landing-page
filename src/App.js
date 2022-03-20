@@ -12,7 +12,6 @@ const theme = {
         header: "#ebfbff",
         body: "#fff",
         footer: "#003333",
-        pink: "hsl(208, 11%, 55%)",
         darkCyan: "hsl(192, 100%, 9%)",
         paleCyan: "hsl(193, 100%, 96%)",
         grayishBlue: "hsl(208, 11%, 55%)",
