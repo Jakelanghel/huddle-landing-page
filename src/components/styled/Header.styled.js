@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    background: ${({ theme }) => theme.colors.header};
+    background: ${({ theme }) => theme.colors.paleCyan};
     background-image: url("./images/bg-hero-mobile.svg");
     background-size: cover;
     background-position: -40px -40px;

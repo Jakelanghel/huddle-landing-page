@@ -9,13 +9,14 @@ import GlobalStyles from "./components/styled/Global";
 
 const theme = {
     colors: {
-        header: "#ebfbff",
-        body: "#fff",
-        footer: "#003333",
+        // header: "#ebfbff",
+        // body: "#fff",
+        // footer: "#003333",
         darkCyan: "hsl(192, 100%, 9%)",
         paleCyan: "hsl(193, 100%, 96%)",
         grayishBlue: "hsl(208, 11%, 55%)",
         pink: "hsl(322, 100%, 66%) ",
+        white: "#fff",
     },
 
     desktop: "700px",

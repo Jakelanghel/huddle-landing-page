@@ -42,6 +42,12 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
 }
 
+.btn-pink {
+  background: ${({ theme }) => theme.colors.pink};
+  color: ${({ theme }) => theme.colors.white};
+  color: #fff;
+}
+
  @media (min-width: ${({ theme }) => theme.desktop}) {
    
   h1 {

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     background-color: ${({ theme }) => theme.colors.darkCyan};
-    color: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.colors.white};
     padding: 10rem 3rem 3rem;
     position: relative;
     z-index: 0;

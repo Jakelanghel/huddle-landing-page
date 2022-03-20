@@ -7,7 +7,7 @@ const Cta = () => {
         <StyledContainerAbsolute>
             <h2>Ready To Build Your Community?</h2>
             <Button
-                className='cta-btn'
+                className='cta-btn btn-pink'
                 bg={({ theme }) => theme.colors.pink}
                 color='#fff'
                 ft='1.5rem'
