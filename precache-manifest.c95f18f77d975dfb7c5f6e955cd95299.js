@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "796a53c4432fb51a37bd",
+    "revision": "ca1f70ae90f914ab2038",
     "url": "/huddle-landing-page/static/css/main.ac201010.chunk.css"
   },
   {
-    "revision": "796a53c4432fb51a37bd",
-    "url": "/huddle-landing-page/static/js/main.796a53c4.chunk.js"
+    "revision": "ca1f70ae90f914ab2038",
+    "url": "/huddle-landing-page/static/js/main.ca1f70ae.chunk.js"
   },
   {
     "revision": "0909c5cbe95acb504a3a",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/huddle-landing-page/static/js/runtime~main.dbd5e85a.js"
   },
   {
-    "revision": "6264d44aeefbf0083fa30b29b5610ea2",
+    "revision": "23745eb85436d65ff98348f9098b5835",
     "url": "/huddle-landing-page/index.html"
   }
 ];
